@@ -10,7 +10,7 @@ RUN apt-get -qq update && apt-get -qq install -y \
    && rm -rf /var/lib/apt/lists/*
  
 # Downloading and setting permissions on the Unity Installer for Linux
-RUN curl -o /unity-installer https://beta.unity3d.com/download/6e9a27477296/UnitySetup-2018.3.0f2
+RUN curl -o /unity-installer https://download.unity3d.com/download_unity/d74737c6db50/UnitySetup-2022.3.2f1
 RUN chmod +x /unity-installer
 
 # Runs the installer installing Unity, WebGL, iOS, and Android packages. Remove any package from the arg to save space.
