@@ -1,12 +1,4 @@
 FROM jetbrains/teamcity-minimal-agent:latest
-
-# Instala dependencias necesarias
-RUN apt-get update -y && \
-    apt-get install -y \
-    software-properties-common \
-    wget \
-    unzip \
-    && apt-get clean
  
 RUN curl -o /unity-installer https://download.unity3d.com/download_unity/d74737c6db50/UnitySetup-2022.3.2f1
 RUN chmod +x /unity-installer
