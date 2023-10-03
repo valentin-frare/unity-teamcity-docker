@@ -18,7 +18,7 @@ RUN yes | /unity-installer --unattended --install-location=/opt/Unity --verbose 
 
 # Adds the license file to the server, this is a pain and necessary if using Unity Free, use instructions at link below
 # https://www.robinryf.com/blog/2017/09/30/running-unity-inside-docker.html
-ADD Unity_lic.ulf /root/.local/share/unity3d/Unity/Unity_lic.ulf
+# ADD Unity_lic.ulf /root/.local/share/unity3d/Unity/Unity_lic.ulf
 
 # ANDROID SDK SUPPORT
 RUN curl -o /android-sdk.zip https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
